@@ -1,13 +1,13 @@
 {% set name = "labgrid" %}
-{% set version = "25.0" %}
+{% set version = "26.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/labgrid-{{ version }}.tar.gz
-  sha256: 880aea4822601f2b13b7a95ba5f3f2b7f8efca8bd55318f29aad6da99deadbaf
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/labgrid-{{ version }}.tar.gz
+  sha256: 330e54c49f7660619ecaccbe72576ca548643fea1312d0f538fdedd73671c1b5
 
 build:
   noarch: python
@@ -58,8 +58,7 @@ about:
   home: https://labgrid.readthedocs.io/
   license: GPL-2.0-or-later
   license_file: LICENSE
-  summary: 'Labgrid is an embedded board control python library with a focus on 
-  testing, development and general automation.'
+  summary: 'Labgrid is an embedded board control python library with a focus on testing, development and general automation.'
 
 extra:
   recipe-maintainers:
